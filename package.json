@@ -1,0 +1,14 @@
+{
+  "name": "agent-sandbox",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A small sandbox repository for trying out dsh-superagent.",
+  "scripts": {
+    "test": "node --test",
+    "start": "node src/slugify.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
