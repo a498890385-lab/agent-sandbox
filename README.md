@@ -8,12 +8,14 @@ works in its own checkout and opens a pull request.
 ## What is here
 
 - `src/slugify.js` turns a title into a URL-safe slug.
-- `test/slugify.test.js` covers it with Node's built-in test runner.
+- `src/truncate.js` cuts text down to a maximum length, e.g. `truncate('Hello World', 8)` returns `Hello W…`.
+- `test/slugify.test.js` and `test/truncate.test.js` cover both helpers with Node's built-in test runner.
 
 ## Run
 
     npm test                              # node --test, no install needed
     node src/slugify.js "Hello World"     # hello-world
+    node src/truncate.js "Hello World" 8      # Hello W…
 
 ## Trying the agent
 
